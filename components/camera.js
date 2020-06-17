@@ -86,7 +86,7 @@ export default class CameraPage extends React.Component {
 			await formData.append('image', { uri: localUri, name: filename, type });
 			await axios({
 				method: 'post',
-				url: 'https://docker-django-api-v1.herokuapp.com/face_detection/detect/firebase/',
+				url: 'https://delta24-mini-django-api-v1.herokuapp.com/face_detection/detect/firebase/',
 				data: formData,
 				headers: {
 					'Accept': 'application/json',
